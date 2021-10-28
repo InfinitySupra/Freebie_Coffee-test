@@ -182,7 +182,7 @@ a {
       line-height: 34px;
    }
 }
-.container {
+.container-top {
    width: 100%;
    height: 100%;
    display: flex;
@@ -283,7 +283,8 @@ a {
    flex-wrap: wrap;
    z-index: 100;
 }
-.box-content {
+.box-content1 {
+   margin-left: 9.14%;
    width: 35em;
    height: 16em;
    background: #f2f2f2;
@@ -448,4 +449,214 @@ a {
 }
 .dopdop {
    width: 21.312em;
+}
+footer *, *::after, *::before {
+   margin: 0;
+   padding: 0;
+}
+.footer {
+   margin-top: 7.875em;
+   position: relative;
+   width: 100%;
+   height: 56.625em;
+}
+.container {
+   margin-top: 5.5em;
+   position: absolute;
+   max-width: 1400px;
+   height: 100%;
+}
+.box-header {
+   width: 100%;
+   height: 4em;
+}
+                              /* stalization */
+                              .box-text {
+                                 color: #415167;
+                                 .box-text__top {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                 }
+                                 .box-text__down {
+                                    margin-top: 6px;
+                                    font-family: $montserrat;
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    line-height: 34px;
+                                 }
+                              }
+                              /*------*/
+.box-text {
+   width: 18.12em;
+   height: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.box-footer {
+   margin-top: 4em;
+   display: flex;
+   margin-left: 8em;
+}
+.box-content {
+   width: 71.25em;
+   height: 35.12em;
+   display: flex;
+   justify-content: space-between;
+}
+.box-scoreboard {
+   background-color: #f2f2f2;
+   width: 22.5em;
+   height: 100%;
+   margin: 0 1.125em;
+}
+.box-scorebord__image {
+   width: 100%;
+   height: 18.75em;
+   img {
+      width: 100%;
+      height: 100%;
+   }
+}
+                           /* font-styles */
+                           .box-scorebord__value {
+                              .box-scorebord__price {
+                              font-weight: 600;
+                              font-size: 20px;
+                              line-height: 24px;
+                              color: #C7A17A;
+                              }
+                              .box-scorebord__original {
+                                 padding-left: 10px;
+                                 font-style: italic;
+                                 font-weight: 300;
+                                 font-size: 14px;
+                                 line-height: 19px;
+                                 color: #415167;
+                              }
+                           }
+                           /*-------*/
+
+.box-scorebord__value {
+   max-width: 17.25em;
+   min-height: 1.37em;
+   margin-top: 2.125em;
+   margin-left: 2.625em;
+   display: flex;
+   align-items: center;
+}
+                           /* stylization */
+                           .box-scorebord__text {
+                              span {
+                                 color: #232C38;
+                                 font-weight: bold;
+                                 font-size: 24px;
+                                 line-height: 28px;
+                              }
+                              p {
+                                 color: #151D28;
+                                 font-weight: 300;
+                                 font-size: 16px;
+                                 line-height: 22px;
+                              }
+                           }
+                           /*-------*/
+
+.box-scorebord__text {
+   width: 100%;
+   min-height: 5.125em;
+   margin-left: 2.625em;
+   margin-top: 0.625em;
+   max-width: 17.25em;
+   p {
+      padding-top: 0.625em;
+   }
+}
+
+                           /* stylization */
+                           .box-scorebord__desc {
+                              %fontButton {
+                                 font-weight: bold;
+                                 font-size: 16px;
+                                 line-height: 22px;
+                              }
+                              .button {
+                                 width: 8.375em;
+                                 height: 2em;
+                                 button {
+                                    @extend %fontButton;
+                                    color: #F9FBFF;
+                                    background: #C7A17A;
+                                    border: none;
+                                    border-radius: 19px;
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: .8;
+                                 }
+                                 button:hover {
+                                    opacity: 1;
+                                 }
+                              }
+                              a {
+                                 @extend %fontButton;
+                                 color: #415167;
+                              }
+                              a:hover {
+                                 opacity: .8;
+                              }
+                           }
+                           /*-------*/
+.box-scorebord__desc {
+   height: 2em;
+   max-width: 17em;
+   margin-left: 2.625em;
+   margin-top: 2em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.box-btn {
+   height: 35.125em;
+   width: 3em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+                              /* stylization */
+                              .box-btn {
+                                 button {
+                                    width: 3em;
+                                    height: 3em;
+                                    border: none;
+                                    border-radius: 50%;
+                                    background-color: #C7A17A;
+                                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    opacity: .8;
+                                 }
+                                 button:active {
+                                    opacity: 1;
+                                 }
+                              }
+                              /*-------*/
+.box-footer-right {
+   background-color: #415167;
+   width: 20.375em;
+   height: 100%;
+   margin-left: 76.71%;
+}
+.footer-bottom {
+   width: 100%;
+   height: 3.75em;
+   span {
+      margin: 1.125em 41.78% 1.25em 41.78%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #415167;
+   }
 }
